@@ -4,9 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CVW - Rodrigo Lopez</title>
+    <title>CVW - Rodrigo López</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    
+    <div id="page-wrapper">
+        <div class="menu">
+            <div class="menu-container">
+                <div class="menu-image">
+                    <a href="#"><img src="img/profile.jpg" alt="" /></a>
+                </div>
+                <div class="menu-title">
+                    <h4>Rodrigo López</h4>                  
+                </div>
+                <nav class="menu-nav">
+                    <ul>
+                        <li><a href="#">Perfil</a></li>
+                        <li><a href="#">Proyectos</a></li>
+                        <li><a href="#">Contacto</a></li>
+                  </ul>
+                </nav>
+            </div>
+        </div>
+
+        <section class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2>Perfil</h2>                    
+                </div>
+                <div class="section-body">                                        
+                    <h4>Sobre mi</h4>
+                    <p>
+                    Mi nombre es Rodrigo López, soy alumno de la Universidad Católica del Uruguay<br> 
+                    Actualmente estoy cursando la carrera de Ingeniería en Informatica, soy de la generacion 2018 y este es mi 4to año en la facultad...
+                    </p>
+                    <h4>Datos</h4>
+                    <ul>
+                        <li>Nombre : Rodrigo Lopez</li>
+                        <li>Edad : 38</li>
+                        <li>Mail : rodrigo.lopezp@correo.ucu.edu.uy</li>
+                    </ul>
+                    <h4>Experiencia laborar</h4>
+                    <ul>
+                        <li>Tata</li>
+                        <li>Google</li>
+                        <li>Facebook</li>
+                    </ul>                                     
+                </div>          
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2>Perfil</h2>                    
+                </div>
+                <div class="section-body">                                        
+                    <h4>Proyectos</h4>
+                    <ul>
+                        <li>Proyecto 1</li>
+                        <li>Proyecto 2</li>
+                        <li>Proyecto 3</li>
+                    </ul>                                   
+                </div>          
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2>Contacto</h2>                    
+                    <span>Para ponerse en contacto complete el siguiente formulario.</span>
+                </div>
+                <div class="section-body">                       
+                    <form id="contact" action="" method="post">
+                        <div class="form-container">
+                            <div>
+                                <fieldset>
+                                    <input name="form-name" type="text" id="form-name" placeholder="Nombre..." required=""/>
+                                </fieldset>
+                            </div>
+                            <div>
+                                <fieldset>
+                                    <input name="form-email" type="text" id="form-email" placeholder="E-mail..." required=""/>
+                                </fieldset>
+                            </div>                    
+                            <div>
+                                <fieldset>
+                                    <textarea name="form-message" rows="6" id="form-message" placeholder="Mensaje..." required=""></textarea>
+                                </fieldset>
+                            </div>
+                            <div>
+                                <fieldset>
+                                    <button type="submit" id="form-submit">Enviar</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>                    
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>

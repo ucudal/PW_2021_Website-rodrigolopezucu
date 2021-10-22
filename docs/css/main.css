@@ -1,0 +1,95 @@
+body{
+    margin:0;
+    padding:0;
+}
+#page-wrapper {
+    background: url("../img/bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+}
+.menu {    
+    position: fixed;
+    width: 25%;
+    height: 100vh;
+    background-color:#21385d;
+    text-align: center;
+}
+.menu-container{
+    width: 100%;
+}
+
+.menu-image{
+    margin-top:30px;    
+}
+
+.menu-image img{
+    border-radius:50%;
+}
+
+.menu-title{
+    margin: 40px 0px 60px 0px;
+}
+
+.menu-title h4{
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.25px;
+}
+
+.menu-nav{
+    text-align: center;
+}
+
+.menu-nav ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    
+}
+
+.menu-nav li{
+    display: block;
+}
+
+.menu-nav li a {
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    width: 100%;
+    text-decoration: none;
+    transition: all 0.5s;
+    border-top: 2px solid #fff;
+}
+.menu-nav li.active a {
+    background: #fff;
+    color: #8c363e;
+}
+
+.section{
+    display: block;
+    color: #fff;    
+    width: 55%;
+    right: 10%;
+    left: 35%;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 80px;
+    border-bottom: 3px solid rgba(250, 250, 250, 0.25);
+}
+
+.section-container{
+
+}
+.section-header{
+
+}
+.section-body{
+
+}
+.form-section{
+
+}
