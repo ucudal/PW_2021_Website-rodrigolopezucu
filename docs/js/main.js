@@ -68,8 +68,7 @@ function formSend(e,form){
         method: "POST",        
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
-        },
-        credentials: 'include',
+        },        
         body: data        
     });
 
