@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ucudal/PW_2021_Website-rodrigolopezucu/issues"
   },
-  "homepage": "https://github.com/ucudal/PW_2021_Website-rodrigolopezucu#readme"
+  "homepage": "https://github.com/ucudal/PW_2021_Website-rodrigolopezucu#readme",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
 }
