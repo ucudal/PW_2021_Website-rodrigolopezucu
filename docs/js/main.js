@@ -24,10 +24,21 @@ function getCookie(cname) {
 }
 
 
-  let user = getCookie("PW_2021-CV_Contacto");
-  if (user != "") {
-    alert("Welcome again " + user);
-  } 
+const url_cookie = 'https://PW2021-APINodejsrodrigolopezucu.rodrigolopezucu.repl.co/get-cookie';
+var request_cookie = new Request(url_cookie, {
+    method: 'GET'
+});
+fetch(request_cookie).then(function(response) {
+    if(response.ok) {
+        console.log(response);
+    }
+    else {
+        console.log(response.statusText);
+    }
+}).catch(function(error) {
+    console.log('Hubo un problema con la petición:' + error.message);
+});
+
 
 
 fetch(request_el).then(function(response) {
