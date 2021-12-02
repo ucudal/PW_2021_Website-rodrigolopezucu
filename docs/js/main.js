@@ -1,6 +1,7 @@
 let x = document.cookie;
 
-const url_el = 'https://PW2021-APINodejsrodrigolopezucu.rodrigolopezucu.repl.co/experiencia-laboral';
+const url_el = 'https://PW2021-APINode-rodrigolopezucu.rodrigolopezucu.repl.co/experiencia-laboral';
+
 var request_el = new Request(url_el, {
     method: 'GET',    
     headers: {
@@ -22,24 +23,6 @@ function getCookie(cname) {
   }
   return "";
 }
-
-
-const url_cookie = 'https://PW2021-APINodejsrodrigolopezucu.rodrigolopezucu.repl.co/get-cookie';
-var request_cookie = new Request(url_cookie, {
-    method: 'GET'
-});
-fetch(request_cookie).then(function(response) {
-    if(response.ok) {
-        console.log(response);
-    }
-    else {
-        console.log(response.statusText);
-    }
-}).catch(function(error) {
-    console.log('Hubo un problema con la petición:' + error.message);
-});
-
-
 
 fetch(request_el).then(function(response) {
     if(response.ok) {
@@ -74,15 +57,14 @@ fetch(request_el).then(function(response) {
 
 function formSend(e,form){
     const data = new URLSearchParams(new FormData(form));
-    const url_form = 'https://PW2021-APINodejsrodrigolopezucu.rodrigolopezucu.repl.co/enviar-formulario';
+    const url_form = 'https://PW2021-APINode-rodrigolopezucu.rodrigolopezucu.repl.co/enviar-formulario';
     var request_form = new Request(url_form, {
         method: "POST",        
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
         },        
         body: data,          
-        redirect: 'follow',
-        credentials: 'include'      
+        redirect: 'follow'        
     });
 
     fetch(request_form).then(function(response) {
