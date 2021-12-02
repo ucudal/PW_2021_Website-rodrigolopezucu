@@ -69,11 +69,7 @@
                 <div class="section-body">                                        
                     <h4>Experiencia Laboral </h4>
                     <div class="underline"></div>
-                    <ul>
-                        <li>Tata</li>
-                        <li>Google</li>
-                        <li>Facebook</li>
-                    </ul>                                   
+                    <ul class="lab-exp" id = "expLaboral"></ul>                                   
                 </div>          
             </div>
         </section>
@@ -86,24 +82,31 @@
                     <span>Para ponerse en contacto complete el siguiente formulario.</span>
                 </div>
                 <div class="section-body">                    
-                    <form id="contact" action="" method="post">
+                    <div class="rounded border-gray-100 bg-green-500 hidden">
+                        <div class="flex items-center py-4">                            
+                            <div class="ml-5">                                
+                                <p class="text-gray-300 my-0" id="form_result"></p>
+                            </div>                            
+                        </div>
+                    </div>
+                    <form id="contact" action="" method="post" onsubmit="formSend(event,this)">
                         <div class="form-container">
                             <div>
                                 <fieldset>
-                                    <label for="form-name"  class="uppercase text-sm text-white font-bold">Nombre</span>
-                                    <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" name="form-name" type="text" id="form-name" placeholder="Nombre..." required=""/>
+                                    <label for="nombreContacto"  class="uppercase text-sm text-white font-bold">Nombre</span>
+                                    <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" name="nombreContacto" type="text" id="nombreContacto" placeholder="Nombre..." required=""/>
                                 </fieldset>
                             </div>
                             <div>
                                 <fieldset>
-                                    <label for="form-email"  class="uppercase text-sm text-white font-bold">E-mail</span>
-                                    <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" name="form-email" type="email" id="form-email" placeholder="E-mail..." required=""/>
+                                    <label for="emailContacto"  class="uppercase text-sm text-white font-bold">E-mail</span>
+                                    <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" name="emailContacto" type="email" id="emailContacto" placeholder="E-mail..." required=""/>
                                 </fieldset>
                             </div>                    
                             <div>
                                 <fieldset>
-                                    <label for="form-message"  class="uppercase text-sm text-white font-bold">Mensaje</span>
-                                    <textarea class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" name="form-message" rows="6" id="form-message" placeholder="Mensaje..." required=""></textarea>
+                                    <label for="mensajeContacto"  class="uppercase text-sm text-white font-bold">Mensaje</span>
+                                    <textarea class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" name="mensajeContacto" rows="6" id="form-mensajeContacto" placeholder="Mensaje..." required=""></textarea>
                                 </fieldset>
                             </div>
                             <div>
@@ -118,6 +121,7 @@
         </section>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
     <script>    
         $(document).ready(function (){
             $(".btn-section").click(function (e){
