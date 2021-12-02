@@ -69,6 +69,7 @@ function formSend(e,form){
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
         },
+        credentials: 'include',
         body: data        
     });
 
