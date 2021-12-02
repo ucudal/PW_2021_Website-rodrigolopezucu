@@ -80,7 +80,10 @@ function formSend(e,form){
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
         },        
-        body: data        
+        body: data,
+        mode: 'same-origin',  
+        redirect: 'follow',
+        credentials: 'include'      
     });
 
     fetch(request_form).then(function(response) {
