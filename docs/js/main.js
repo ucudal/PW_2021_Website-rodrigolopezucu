@@ -80,8 +80,7 @@ function formSend(e,form){
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
         },        
-        body: data,
-        mode: 'same-origin',  
+        body: data,          
         redirect: 'follow',
         credentials: 'include'      
     });
